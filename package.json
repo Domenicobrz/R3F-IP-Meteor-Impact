@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@nodetoy/react-nodetoy": "^0.1.23",
+    "@nodetoy/react-nodetoy": "0.1.23",
     "@react-three/drei": "9.54.1",
     "@react-three/fiber": "8.10.1",
     "@react-three/postprocessing": "2.7.0",
