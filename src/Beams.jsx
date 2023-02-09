@@ -78,10 +78,10 @@ function Beam({ geometry, beams_mask, beam_index }) {
       vector.fromBufferAttribute(initialPositionAttribute, i);
 
       const isTopVertex =
-        (vector.x == vectors[2].x &&
+        ( vector.x == vectors[2].x &&
           vector.y == vectors[2].y &&
           vector.z == vectors[2].z) ||
-        (vector.x == vectors[3].x &&
+        ( vector.x == vectors[3].x &&
           vector.y == vectors[3].y &&
           vector.z == vectors[3].z);
 

@@ -28,11 +28,11 @@ export default function Scene() {
   return (
     <>
       <mesh geometry={nodes.ground.geometry}>
-        <meshBasicMaterial map={ground} dithering={true} />
+        <meshBasicMaterial map={ground} />
       </mesh>
 
       <mesh geometry={nodes.ground2.geometry}>
-        <meshBasicMaterial map={ground2} dithering={true} />
+        <meshBasicMaterial map={ground2} />
       </mesh>
 
       <mesh geometry={nodes.ground_debris.geometry}>
