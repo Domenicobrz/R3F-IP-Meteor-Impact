@@ -3,7 +3,7 @@ import { useGLTF, useTexture } from "@react-three/drei";
 import { data as fragmentsShaderData } from "./fragments-shader";
 
 export default function Scene() {
-  const { nodes } = useGLTF("/assets/models/scene.glb");
+  const { nodes } = useGLTF("assets/models/scene.glb");
 
   const [
     ground,
@@ -15,14 +15,14 @@ export default function Scene() {
     fragments,
     debris,
   ] = useTexture([
-    "/assets/textures/ground.png",
-    "/assets/textures/ground2.png",
-    "/assets/textures/ground_debris.png",
-    "/assets/textures/pipes_and_rover.png",
-    "/assets/textures/astronauts_white.png",
-    "/assets/textures/astronauts_orange.png",
-    "/assets/textures/fragments.png",
-    "/assets/textures/debris.png",
+    "assets/textures/ground.png",
+    "assets/textures/ground2.png",
+    "assets/textures/ground_debris.png",
+    "assets/textures/pipes_and_rover.png",
+    "assets/textures/astronauts_white.png",
+    "assets/textures/astronauts_orange.png",
+    "assets/textures/fragments.png",
+    "assets/textures/debris.png",
   ]);
 
   return (

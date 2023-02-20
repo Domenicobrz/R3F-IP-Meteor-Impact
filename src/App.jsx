@@ -22,16 +22,16 @@ function App() {
     <>
       <Environment
         background={"only"}
-        files={"/assets/textures/envmap_blur.hdr"}
+        files={"assets/textures/envmap_blur.hdr"}
         ground={{ height: 100, radius: 300 }}
       />
       <Environment
         background={false}
-        files={"/assets/textures/envmap.hdr"}
+        files={"assets/textures/envmap.hdr"}
       />
 
-      <PerspectiveCamera makeDefault fov={33} position={[-0.09, 16.01, -27.9]} />
-      <OrbitControls target={[0.304, 0.806, 0.427]} maxPolarAngle={Math.PI * 0.45} />
+      <PerspectiveCamera makeDefault fov={33} position={[-0.07, 16.41, -24.1]} />
+      <OrbitControls target={[0.02, 0.806, 0.427]} maxPolarAngle={Math.PI * 0.45} />
 
       <NodeToyTick />
 

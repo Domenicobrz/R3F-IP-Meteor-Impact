@@ -7,9 +7,9 @@ import { NodeToyMaterial } from "@nodetoy/react-nodetoy";
 import { data } from "./meteor-shader";
 
 export default function Meteor() {
-  const { nodes } = useGLTF("/assets/models/meteor.glb");
+  const { nodes } = useGLTF("assets/models/meteor.glb");
 
-  const [ normalMap ] = useTexture(["/assets/textures/meteor_normals.png"]);
+  const [ normalMap ] = useTexture(["assets/textures/meteor_normals.png"]);
 
   return (
     <>

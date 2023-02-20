@@ -8,9 +8,9 @@ import { useMemo } from "react";
 import { useFrame } from "@react-three/fiber";
 
 export default function Beams() {
-  const { nodes } = useGLTF("/assets/models/beams.glb");
+  const { nodes } = useGLTF("assets/models/beams.glb");
 
-  const [beams_mask] = useTexture(["/assets/textures/beams_mask.png"]);
+  const [beams_mask] = useTexture(["assets/textures/beams_mask.png"]);
 
   const beamsGeometries = [
     nodes.beam0.geometry,
