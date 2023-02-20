@@ -7,6 +7,7 @@ import { NodeToyMaterial } from "@nodetoy/react-nodetoy";
 import { data } from "./meteor-shader";
 
 export default function Meteor() {
+  // thanks to: https://sketchfab.com/3d-models/moon-meteor-dbd699a1bf2249a596ecc411ab69679f
   const { nodes } = useGLTF("assets/models/meteor.glb");
 
   const [ normalMap ] = useTexture(["assets/textures/meteor_normals.png"]);
