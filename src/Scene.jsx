@@ -1,7 +1,14 @@
 import { useGLTF, useTexture } from "@react-three/drei";
 
 export default function Scene() {
-  const { nodes } = useGLTF("/assets/models/scene.glb");
+  /**
+    Models used:
+    https://sketchfab.com/3d-models/astronaut-dfde0bf25e2b44809c08105c30610694
+    https://sketchfab.com/3d-models/tripod-omni-directional-lamp-d7ee949704c24ddab792184fcfde0016#download
+    https://sketchfab.com/3d-models/steampunk-pipes-and-valves-9d0d9bd35e1744a4a7b258299c0cffaa#download
+    https://sketchfab.com/3d-models/explorer-t30-concept-rover-cf05f52b5d364a00a7af3e94731055bf
+   */
+  const { nodes } = useGLTF("assets/models/scene.glb");
 
   const [
     ground,
@@ -13,14 +20,14 @@ export default function Scene() {
     fragments,
     debris,
   ] = useTexture([
-    "/assets/textures/ground.png",
-    "/assets/textures/ground2.png",
-    "/assets/textures/ground_debris.png",
-    "/assets/textures/pipes_and_rover.png",
-    "/assets/textures/astronauts_white.png",
-    "/assets/textures/astronauts_orange.png",
-    "/assets/textures/fragments.png",
-    "/assets/textures/debris.png",
+    "assets/textures/ground.png",
+    "assets/textures/ground2.png",
+    "assets/textures/ground_debris.png",
+    "assets/textures/pipes_and_rover.png",
+    "assets/textures/astronauts_white.png",
+    "assets/textures/astronauts_orange.png",
+    "assets/textures/fragments.png",
+    "assets/textures/debris.png",
   ]);
 
   return (
