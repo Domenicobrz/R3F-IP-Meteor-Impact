@@ -8,6 +8,7 @@ import Scene from "./Scene";
 import { useThree } from "@react-three/fiber";
 import Meteor from "./Meteor";
 import { NodeToyTick } from "@nodetoy/react-nodetoy";
+import Beams from "./Beams";
 
 function App() {
   const state = useThree();
@@ -36,6 +37,7 @@ function App() {
       <Suspense fallback={null}>
         <Scene />
         <Meteor />
+        <Beams />
       </Suspense>
     </>
   );
